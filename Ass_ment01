@@ -1,0 +1,20 @@
+#include<stdio.h>
+int checkeven_odd(int i);
+int main()
+{
+int i;
+int ans;
+scanf("%d",&i);
+ans=checkeven_odd(i);
+if(ans==1)
+printf("even");
+else
+printf("odd");
+}
+int checkeven_odd(int n)
+{
+if(n%2==0)
+ return 1;
+else
+return 0;
+}
