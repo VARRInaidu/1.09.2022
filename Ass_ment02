@@ -1,0 +1,17 @@
+#include<stdio.h>
+int fact(int i);
+int main()
+{
+int i;
+long int ans;
+scanf("%d",&i);
+ans=fact(i);
+printf("%ld",ans);
+}
+int fact(int n)
+{
+if(n==1)
+ return 1;
+else
+return n*fact(n-1);
+}
